@@ -1,0 +1,31 @@
+                            precision    recall  f1-score   support
+
+          american_bulldog       0.74      0.78      0.76        40
+ american_pit_bull_terrier       0.76      0.70      0.73        40
+              basset_hound       0.89      0.85      0.87        40
+                    beagle       0.81      0.88      0.84        40
+                     boxer       0.89      0.80      0.84        40
+                 chihuahua       0.87      0.85      0.86        40
+    english_cocker_spaniel       0.94      0.75      0.83        40
+            english_setter       0.79      0.85      0.82        40
+        german_shorthaired       1.00      0.82      0.90        40
+            great_pyrenees       0.81      0.97      0.89        40
+                  havanese       0.80      0.93      0.86        40
+             japanese_chin       0.95      0.97      0.96        40
+                  keeshond       1.00      0.95      0.97        40
+                leonberger       0.95      0.97      0.96        40
+        miniature_pinscher       0.90      0.88      0.89        40
+              newfoundland       0.93      1.00      0.96        40
+                pomeranian       0.95      0.97      0.96        40
+                       pug       0.98      1.00      0.99        40
+             saint_bernard       0.97      0.97      0.97        40
+                   samoyed       0.95      0.90      0.92        40
+          scottish_terrier       0.97      0.92      0.95        39
+                 shiba_inu       0.89      0.97      0.93        40
+staffordshire_bull_terrier       0.73      0.87      0.80        38
+           wheaten_terrier       1.00      0.82      0.90        40
+         yorkshire_terrier       0.95      0.93      0.94        40
+
+                  accuracy                           0.89       997
+                 macro avg       0.90      0.89      0.89       997
+              weighted avg       0.90      0.89      0.89       997
