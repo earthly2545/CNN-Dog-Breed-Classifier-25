@@ -6,7 +6,7 @@ import os
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from sklearn.metrics import classification_report, confusion_matrix, ConfusionMatrixDisplay
 
-MODEL_PATH = './models/dog_breed_120_classifier_model.h5'
+MODEL_PATH = './models/dog_breed_25_classifier_model.h5'
 DATA_DIR_BASE = './data/'
 dataset_path = os.path.join(DATA_DIR_BASE, 'dog-breeds')
 DATA_DIR = dataset_path
