@@ -50,19 +50,19 @@ async def upload_file(file: UploadFile | None = None):
         img_batch = np.expand_dims(img_array, axis=0)
     except Exception as e:
          return {"message": "Error processing image", "error": str(e)}
-
-
-    try: 
-     prediction = model.predict(img_batch)
-     confidence = np.max(prediction[0]) * 100
-     prediction_class_index = np.argmax(prediction[0])
-     predicted_class_name = class_names[prediction_class_index]
+    try:
+        prediction = model.predict(img_batch)
+        confidence = np.max(prediction[0]) * 100
+        predicted_class_index = np.argmax(prediction[0])
+        predicted_class_name = class_names[predicted_class_index]
     except Exception as e:
         return {"message": "Error during prediction", "error": str(e)}
-    
 
+    if confidence < 70:
+        predicted_class_name = "ไม่มั่นใจว่าเป็นพันธุ์อะไร" 
 
-    return {"filename": file.filename
-            , "predicted_breed": predicted_class_name
-            , "confidence": f"{confidence:.2f}%"
-            }
+    return {
+        "filename": file.filename,
+        "predicted_breed": predicted_class_name,
+        "confidence": f"{confidence:.2f}%"
+    }
